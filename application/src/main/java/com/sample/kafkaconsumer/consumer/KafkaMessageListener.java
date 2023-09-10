@@ -10,7 +10,7 @@ public class KafkaMessageListener {
 
 	Logger log= LoggerFactory.getLogger(KafkaMessageListener.class);
 	
-	@KafkaListener(topics = "kafka-test", groupId = "kafkatest1")
+	@KafkaListener(topics = "kafka-auto-topic", groupId = "kafkatest1")
 	public void consume(String message) {
 		log.info("consumer consume the message {} ",message);
 	}
